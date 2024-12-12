@@ -180,5 +180,6 @@ public class Main {
         if (three >one && three > two){
             System.out.println(three + " самое большое число");
         }
+
     }
 }
