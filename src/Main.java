@@ -181,23 +181,21 @@ public class Main {
             System.out.println(three + " самое большое число");
         }
         System.out.println();
+
         int clientOS = 0;
         int clientDeviceYear = 2014;
-        switch (clientOS) {
-            case 0:
-                if (clientDeviceYear <= 2015) {
-                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-                } else {
-                    System.out.println("Установите версию приложения для iOS по ссылке");
-                }
-                break;
-            case 1:
-                if (clientDeviceYear <= 2015) {
-                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
-                } else {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                }
+        if (clientDeviceYear >= 2015) {
+            if (clientOS == 0) {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            }
+        } else if (clientOS == 0) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
+
         System.out.println();
         int year = 2020;
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
@@ -220,7 +218,7 @@ public class Main {
         int monthNumber = 34;
         if (monthNumber >= 13) {
             System.out.println("Такого месяца не существует");
-        }else {
+        } else {
             switch (monthNumber) {
                 case 12, 2, 1:
                     System.out.println("Сейчас зима");
