@@ -87,7 +87,7 @@ public class Main {
         var brownPaint = 4;
         var countPaint = 120;
         var rooms = countPaint / (whitePaint + brownPaint);
-        System.out.println("В школе, где " + rooms + " классов, нужно " +whitePaint * rooms + " банок белой краски и " +brownPaint * rooms + " банок коричневой краски");
+        System.out.println("В школе, где " + rooms + " классов, нужно " + whitePaint * rooms + " банок белой краски и " + brownPaint * rooms + " банок коричневой краски");
         System.out.println();
         var banan = 5;
         var milk = 2;
@@ -112,6 +112,73 @@ public class Main {
         var salaryKristina2 = salaryKristina1 + ((salaryKristina1 / 100f) * 10);
         System.out.println("Кристина теперь получает " + salaryKristina2 + " рублей. Годовой доход вырос на " + (salaryKristina2 % salaryKristina1) * 12 + " рублей");
         System.out.println();
-
+        int age = 18;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + " то он совешеннолетний");
+        } else {
+            System.out.println("Если возраст человека равен " + age + " он не достиг совершеннолетия, нужно немного подождать");
+        }
+        System.out.println();
+        int temperature = -5;
+        if (temperature >= 5) {
+            System.out.println("На улице " + temperature + " градусов можно идти без шапки");
+        } else {
+            System.out.println("На улице " + temperature + " градусов  нужно надеть шапку");
+        }
+        System.out.println();
+        int speed = 50;
+        if (speed >= 60) {
+            System.out.println("Если скорость " + speed + " то придется заплатить штраф");
+        } else {
+            System.out.println("Если скорость " + speed + " то можно ездить спокойно");
+        }
+        System.out.println();
+        age = 5;
+        if (age >= 2 && age <= 6) {
+            System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в детский сад.");
+        }
+        if (age >= 7 && age <= 17) {
+            System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в школу.");
+        }
+        if (age >= 18 && age <= 24) {
+            System.out.println("Если возраст человека равен " + age + " то его место в университете.");
+        }
+        if (age > 24) {
+            System.out.println("Если возраст человека равен " + age + " то ему пора ходить на работу.");
+        }
+        System.out.println();
+        int ageKid = 5;
+        if (ageKid <= 5) {
+            System.out.println("Если возраст ребенка равен " + ageKid + " то он не может кататься на аттракционе.");
+        }
+        if (ageKid > 5 && ageKid < 14) {
+            System.out.println("Если возраст ребенка равен " + ageKid + " то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+        }
+        if (ageKid >= 14) {
+            System.out.println("Если возраст ребенка равен " + ageKid + " то он может кататься без сопровождения взрослого.");
+        }
+        System.out.println();
+        int people = 400;
+        if (people >= 102) {
+            System.out.println("Вагон полный");
+        }
+        if (people <= 60) {
+            System.out.println("В вагоне свободно " + (60 - people) + " сидячих мест и " + (102 - 60) + " стоячих места");
+        } else {
+            System.out.println("В вагоне 0 сидячих мест и " + (102 - people) + " стоячих мест");
+        }
+        System.out.println();
+        int one = 110;
+        int two = 16;
+        int three = 50;
+        if (one > two && one > three){
+            System.out.println(one + " самое большое число");
+        }
+        if (two > one && two > three){
+            System.out.println(two + " самое большое число");
+        }
+        if (three >one && three > two){
+            System.out.println(three + " самое большое число");
+        }
     }
 }
